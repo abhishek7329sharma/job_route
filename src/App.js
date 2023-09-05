@@ -13,7 +13,7 @@ import HelpLayout from "./layouts/HelpLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Faq from "./pages/help/Faq";
-import Contact from "./pages/help/Contact";
+import Contact, { contactAction } from "./pages/help/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import Careers, { careersLoader } from "./pages/careers/Careers";
 import CareersLayout from "./layouts/CareersLayout";
@@ -28,7 +28,7 @@ const router = createBrowserRouter(
         {" "}
         {/* localhost:3000/help */}
         <Route path="faq" element={<Faq />} /> {/* localhost:3000/help/faq */}
-        <Route path="contact" element={<Contact />} /> {/* localhost:3000/help/contact */}
+        <Route path="contact" element={<Contact />} action={contactAction} /> {/* localhost:3000/help/contact */}
       </Route>
       <Route 
       path="carrers" 

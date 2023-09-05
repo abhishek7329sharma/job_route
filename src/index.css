@@ -159,7 +159,7 @@ form label span {
   display: inline-block;
   margin-left: 10px;
 }
-.breadcrumbs .crumps:after {
+.breadcrumbs .crumb:after {
   content: '>';
   margin-left: 10px;
 }
